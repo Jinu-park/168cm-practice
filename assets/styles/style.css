@@ -1,0 +1,457 @@
+ @charset "utf-8";
+
+
+ #header {
+     width: 100%;
+     height: 82px;
+     background-color: #fff;
+     position: relative;
+ }
+
+ .row {
+     padding: 0 28px;
+ }
+
+ #banner {}
+
+ #content {}
+
+ #footer {
+     width: 100%;
+     background-color: #f0f0f0;
+     padding: 20px 0;
+ }
+
+ #special-item {
+     background-color: #f0f0f0;
+
+ }
+
+ /* 내부 영역입니다. */
+ .container {
+     width: 1280px;
+     height: inherit;
+     margin: 0 auto;
+ }
+
+ /*  헤더 영역 */
+ .header .row {
+     position: relative;
+     height: 100%;
+ }
+
+ .header {
+     position: relative;
+     overflow: hidden;
+     height: 82px;
+     z-index: 10;
+     width: 100%;
+ }
+
+ .header.on {
+     background-color: rgba(0, 0, 0, 0.5);
+     transition: background-color 0.3s ease;
+     position: fixed;
+     top: 0;
+     left: 0;
+ }
+
+ .header .header-logo .img-normal {
+     display: block;
+ }
+
+ .header .header-logo .img-fixed {
+     display: none;
+ }
+
+ .header.on .header-logo .img-normal {
+     display: none;
+ }
+
+ .header.on .header-logo .img-fixed {
+     display: block;
+ }
+
+ .header .header-logo {
+     position: absolute;
+     top: 50%;
+     left: 38px;
+     transform: translateY(-50%);
+ }
+
+ .header .header-nav-left {
+     float: left;
+     padding-left: 200px;
+ }
+
+ .header .header-nav-left ul {
+     overflow: hidden;
+ }
+
+ .header .header-nav-left ul li {
+     float: left;
+     margin-right: 21px;
+
+ }
+
+ .header ul li a,
+ .header ul li i {
+     color: #222;
+ }
+
+ .header.on ul li a,
+ .header.on ul li i {
+     color: #fff;
+
+ }
+
+
+ .header .header-nav-left ul li a {
+     font-size: 17px;
+     font-weight: 500;
+     line-height: 82px;
+ }
+
+ .header .header-nav-right {
+     float: right;
+ }
+
+ .header .header-nav-right ul {
+     overflow: hidden;
+ }
+
+ .header .header-nav-right ul li {
+     float: left;
+     margin-left: 10px;
+ }
+
+ .header .header-nav-right ul li a {
+     font-size: 24px;
+     line-height: 82px;
+     transition: color 0.3s ease;
+
+ }
+
+ .header .header-nav-right ul li a:hover {
+     color: skyblue;
+ }
+
+ /* 배너 영역 */
+
+ .banner {
+     position: relative;
+ }
+
+
+ .banner .swiper-slide {
+     height: 800px;
+ }
+
+ .banner .swiper-container {}
+
+ .banner .bs01 {
+     background: url('../images/banner01.jpg') no-repeat center center;
+     background-size: cover;
+
+ }
+
+ .banner .bs02 {
+     background: url('../images/banner02.jpg') no-repeat center center;
+     background-size: cover;
+
+ }
+
+ .banner .bs03 {
+     background: url('../images/banner03.jpg') no-repeat center center;
+     background-size: cover;
+
+ }
+
+ .banner .swiper-button-prev,
+ .banner .swiper-button-next {
+     top: 50%;
+     transform: translateY(-50%);
+     background-color: rgba(255, 255, 255, 0.3);
+     border-radius: 10px;
+     padding: 5px;
+
+ }
+
+ .banner .swiper-button-prev {
+     left: 10%;
+ }
+
+ .banner .swiper-button-next {
+     right: 10%;
+     ;
+ }
+
+
+
+
+
+
+
+
+ /* 컨텐츠 영역 */
+
+ .best-item {
+     width: 100%;
+     text-align: center;
+     padding: 100px 0;
+ }
+
+ .content-title-wrapper .content-title h2 {
+     padding-bottom: 30px;
+     font-size: 22px;
+     font-weight: 300;
+     color: #666;
+     text-transform: uppercase;
+ }
+
+ .content-title-wrapper .content-desc p {
+     font-size: 16px;
+     font-weight: 300;
+     color: #666;
+     padding-bottom: 60px;
+
+ }
+
+ .best-item .best-item-product {}
+
+ .best-item .best-item-product ul {
+     overflow: hidden;
+ }
+
+ .best-item .best-item-product ul li {
+     position: relative;
+     float: left;
+     width: 24%;
+     margin-right: 1.333%;
+     margin-bottom: 1.333%;
+     overflow: hidden;
+
+ }
+
+ .best-item .best-item-product ul li:nth-child(4n) {
+     margin-right: 0;
+ }
+
+ .best-item .best-item-product ul li:nth-child(n+5) {
+     margin-bottom: 0;
+ }
+
+
+ .best-item .best-item-product ul li a {}
+
+ .best-item .best-item-product ul li a span {
+     opacity: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     color: #ffff;
+     width: 100%;
+     height: 50%;
+     position: absolute;
+     top: 55%;
+     left: 0%;
+     padding-top: 40px;
+     transition: all 0.3s ease;
+ }
+
+ .best-item .best-item-product ul li:hover a span {
+     opacity: 1;
+     top: 50%;
+
+ }
+
+
+ /* 갤러리 영역 */
+
+ .gallery {
+     padding: 100px 0;
+ }
+
+ .gallery ul {
+     overflow: hidden;
+ }
+
+ .gallery ul li {
+     float: left;
+     width: 50%;
+     margin-bottom: 1.333%;
+ }
+
+ .gallery ul li:nth-child(n+3) {
+     margin-bottom: 0;
+ }
+
+ .gallery ul li img {
+     width: 100%;
+ }
+
+
+ /* 스페셜 아이템 영역 */
+
+ .special-item {
+     padding: 100px 0;
+ }
+
+ .special-item ul {
+     overflow: hidden;
+ }
+
+ .special-item ul li {
+     float: left;
+     width: 50%;
+     text-align: center;
+ }
+
+ .special-item ul li:nth-child(2) {
+     background-color: #fff;
+     padding: 3rem 0;
+     border: 1px solid #dbdbdb;
+     box-sizing: border-box;
+ }
+
+ .special-item ul li:nth-child(2) .product-item {
+     width: 50%;
+     margin: 0 auto;
+ }
+
+ .special-item ul li img {
+     width: 100%;
+ }
+
+
+ .special-item ul li h3 {
+     font-size: 18px;
+     font-weight: 100;
+     color: #444;
+     text-transform: uppercase;
+     padding: 30px 0;
+ }
+
+ .special-item ul li .special-desc h4 {
+     padding: 10px 0;
+     position: relative;
+ }
+
+ .special-item ul li .special-desc h4:after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 1px;
+     bottom: 0;
+     left: 0;
+     background-color: #dbdbdb;
+ }
+
+ .special-item ul li .special-desc strong {
+     padding-top: 10px;
+     display: block;
+ }
+
+ /* 시즌 아이템 영역 */
+
+ .season-item {
+     width: 100%;
+     padding: 100px 0;
+     text-align: center;
+ }
+
+ .season-item ul {
+     overflow: hidden;
+ }
+
+ .season-item ul li {
+     float: left;
+     width: 32.3333%;
+     margin-right: 1%;
+     margin-bottom: 60px;
+     text-align: left;
+ }
+
+ .season-item ul li:nth-child(3n) {
+     margin-right: 0;
+ }
+
+ .season-item ul li a {
+     display: block;
+     overflow: hidden;
+ }
+
+ .season-item ul li a img {
+     transform: scale(1);
+     transition: transform 1s ease-in-out;
+ }
+
+ .season-item ul li a img:hover {
+
+     transform: scale(1.2);
+ }
+
+
+ .season-item ul li h3 {
+     padding: 10px 0;
+     position: relative;
+ }
+
+ .season-item ul li h3:after {
+     position: absolute;
+     content: '';
+     bottom: 0;
+     left: 0;
+     height: 1px;
+     width: 100%;
+     background-color: #dbdbdb;
+ }
+
+ .season-item ul li strong {
+     display: block;
+     padding: 10px 0;
+ }
+
+ /* 푸터 영역 */
+
+ .footer {}
+
+ .footer .footer-top {
+     overflow: hidden;
+ }
+
+
+ .footer .footer-top ul {
+     overflow: hidden;
+ }
+
+ .footer .footer-top .footer-top-left {
+     float: left;
+ }
+
+ .footer .footer-top .footer-top-left li {
+     float: left;
+ }
+
+ .footer .footer-top .footer-top-right {
+     float: right;
+
+ }
+
+ .footer .footer-top .footer-top-right li {
+     float: left;
+ }
+
+ .footer .footer-bottom {
+     display: flex;
+ }
+
+ .footer .footer-bottom>div:nth-child(1) {
+     flex: 1
+ }
+
+ .footer .footer-bottom>div:nth-child(2) {
+     flex: 1;
+ }
+
+ .footer .footer-bottom>div:nth-child(3) {
+     flex: 0 1 50%;
+ }
