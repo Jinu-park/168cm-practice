@@ -64,6 +64,7 @@ background-color: #fff;
 
 .header .header-nav-left ul li{
     float: left;
+    margin-right: 21px;
 }
 
 .header .header-nav-left ul li a{
@@ -84,9 +85,32 @@ background-color: #fff;
 
 .header .header-nav-right ul li{
     float: left;
+    margin-left: 10px;
 }
 
 .header .header-nav-right ul li a{
     font-size: 24px;
     line-height: 82px;
+}
+
+/* 배너 영역 */
+
+.banner{
+    width: 100%;
+}
+
+.banner .swiper-slide {
+    height: 800px;
+}
+.banner .bs01 {
+    background: url('assets/images/banner01.jpg') no-repeat center center;
+    background-size: cover;
+}
+.banner .bs02 {
+    background: url('assets/images/banner02.jpg') no-repeat center center;
+    background-size: cover;
+}
+.banner .bs03 {
+    background: url('assets/images/banner03.jpg') no-repeat center center;
+    background-size: cover;
 }

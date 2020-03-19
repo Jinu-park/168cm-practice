@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>잼누는 복습쟁이야</title>
+    <link rel="stylesheet" href="assets/styles/swiper.css">
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="study-style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
@@ -15,7 +16,6 @@
 <body>
     <!-- 헤더 영역 -->
     <div id="header">
-        <div class="container">
             <div class="row">
                 <div class="header">
                     <h1 class="ir_so">해더 영역입니다.</h1>
@@ -27,7 +27,7 @@
                     <div class="header-nav-left">
                         <ul>
                             <li><a href="">Hard Case</a></li>
-                            <li><a href="">Clear Case</a></li>
+                            <li><a href="">Clear Jelly</a></li>
                             <li><a href="">Fla Tok</a></li>
                             <li><a href="">Couple Item</a></li>
                             <li><a href="">Figure Case</a></li>
@@ -44,7 +44,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
     <!-- //헤더 영역 -->
@@ -53,6 +52,18 @@
     <div id="banner">
         <div class="banner">
             <h1 class="ir_so">배너 영역입니다.</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bs01 ir_pm">Slide 1</div>
+
+                    <div class="swiper-slide bs02 ir_pm">Slide 2</div>
+                    <div class="swiper-slide bs03 ir_pm">Slide 3</div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
     </div>
     <!-- //배너 영역 -->
@@ -85,5 +96,22 @@
 
 
 </body>
+
+<script src="assets/javascripts/swiper.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000
+
+        },
+        loop: 'true'
+    });
+
+</script>
 
 </html>
